@@ -1,0 +1,46 @@
+
+cd '/Users/luis/Documents/Programming/dev/0766_SebRas_Build_An_LLM_From_Scratch/'
+
+
+uv init 0766_Build_An_LLM_from_scratch_311 --python 3.11
+uv init --python 3.11
+
+cd '/Users/luis/Documents/Programming/dev/0766_SebRas_Build_An_LLM_From_Scratch/0766_Build_An_LLM_from_scratch_311/'
+
+uv venv
+source .venv/bin/activate
+uv add torch
+uv add --dev ipykernel
+uv add jupyterlab
+uv add tiktoken
+uv add matplotlib
+uv add tensorflow
+uv add tqdm numpy pandas
+uv add psutil
+uv add --dev ipykernel
+uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --name=0766_Build_An_LLM_from_scratch_311
+clear
+
+
+
+git init
+git commit -m "first commit"
+
+nvim .gitignore
+inside .gitignore
+**/.DS_Store
+*/.DS_Store
+.DS_Store
+:wq
+
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin git@github.com:Luismbpr/0766_Build_An_LLM_from_scratch_311.git         
+git remote set-url origin git@github.com:Luismbpr/0766_Build_An_LLM_from_scratch_311.git
+git status
+git push -u origin main
+
+
+
+cd '/Users/luis/Documents/Programming/dev/0766_SebRas_Build_An_LLM_From_Scratch/0766_Build_An_LLM_from_scratch_311/'
